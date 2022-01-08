@@ -1,5 +1,4 @@
 import random
-from random import randint
 
 random = random.randint(1,100)
 guesses = []
