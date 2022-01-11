@@ -5,10 +5,7 @@
 
 def animal_crackers(strin):
     list_word = strin.split()
-    if list_word[0][0] == list_word[1][0]:
-        return True
-    else:
-        return False
+    return list_word[0][0] == list_word[1][0]
 
 # Check 1
 print(animal_crackers('Levelheaded Llama'))
