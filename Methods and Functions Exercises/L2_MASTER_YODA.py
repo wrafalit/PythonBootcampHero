@@ -8,7 +8,7 @@ def master_yoda(name):
     list_name = name.split()
     for word in list_name[::-1]:
         revi.append(word)
-    return revi
+    return ' '.join(revi)
 
 
 print(master_yoda('I am home'))
