@@ -7,15 +7,21 @@
 
 def count_primes(num):
     count = 0
+    i = 0
     list_primes = list(range(2,num))
     for n in list(range(2,num)):
-        if n % 1 == 0 and n % n == 0:
+        #print(n) check variable
+        for nn in list(range(2,n+1)):
+            #print('nn ',nn) check variable
+            if n % nn == 0:
+                i +=1
+        #print('i ',i) check variable
+        if i == 1:
             count += 1
-            
-    print(list_primes)
-    print(count)
-    pass
-                
+        i = 0
+    return count
+
+
 
 # Check
-print(count_primes(10))
+print(count_primes(100))
