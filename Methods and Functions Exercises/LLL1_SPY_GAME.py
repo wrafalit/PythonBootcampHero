@@ -26,3 +26,6 @@ print(spy_game([1,0,2,4,0,5,7]))
 
 # Check
 print(spy_game([1,7,2,0,4,5,0]))
+
+# Solution not working for list with more 0 or 7 than 007 number
+print(spy_game([1,2,4,0,0,7,5,0,0]))
