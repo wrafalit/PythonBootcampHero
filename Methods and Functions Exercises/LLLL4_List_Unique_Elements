@@ -19,4 +19,11 @@ def unique_list(lst):
     print('Unique List : ',uniq_lst)
     print('no duplicate number (unique): ', uniq_num)
     
+# def unique_list(lst):
+#    unique = []
+#    for n in lst:
+#        if n not in unique:
+#            unique.append(n)
+#    print(unique)
+  
 unique_list([1,1,1,1,2,2,3,3,3,3,4,5])
