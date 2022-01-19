@@ -12,13 +12,13 @@
 import string
 
 def ispangram(str1, alphabet=string.ascii_lowercase):
-    pass
-
+    parag = set((str1.lower()).replace(' ',''))
+    print(parag.issuperset(set(alphabet)))
+ 
+# Check_1   
 ispangram("The quick brown fox jumps over the lazy dog")
-
 # True
 
-string.ascii_lowercase
-
-# 'abcdefghijklmnopqrstuvwxyz'
-
+# Check_2
+ispangram("The quick brown fox and lazy dog")
+#False
