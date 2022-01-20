@@ -55,8 +55,16 @@ def win_check(board, mark):
     else:
         win = False
         return print(win)
-   
+
+import random
+
+def choose_first():
+    first = random.randint(1,2)
+    return print(first)
+    
+
 display_board(test_board)
 place_marker(test_board,'X',8)
 display_board(test_board)
 win_check(test_board,'X')
+choose_first()
