@@ -22,7 +22,10 @@ def player_input():
             print('Please choose X or O ')
         else:
             pass
+def place_marker(board, marker, position):
+    board[position] =marker
+    return board
 
-#player_input()
-#test_board = ['#','X','O','X','O','X','O','X','O','X']
-#display_board(test_board)
+display_board(test_board)
+place_marker(test_board,'$',8)
+display_board(test_board)
