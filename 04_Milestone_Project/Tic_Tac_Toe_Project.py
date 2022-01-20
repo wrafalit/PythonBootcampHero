@@ -26,6 +26,37 @@ def place_marker(board, marker, position):
     board[position] =marker
     return board
 
+def win_check(board, mark):
+    win = False
+    if board[1] == mark and board[2] == mark and board[3] == mark:
+        win = True
+        return print(win)
+    if board[4] == mark and board[5] == mark and board[6] == mark:
+        win = True
+        return print(win)
+    if board[7] == mark and board[8] == mark and board[9] == mark:
+        win = True
+        return print(win)
+    if board[1] == mark and board[4] == mark and board[7] == mark:
+        win = True
+        return print(win)
+    if board[2] == mark and board[5] == mark and board[8] == mark:
+        win = True
+        return print(win)
+    if board[3] == mark and board[6] == mark and board[9] == mark:
+        win = True
+        return print(win)
+    if board[1] == mark and board[5] == mark and board[9] == mark:
+        win = True
+        return print(win)
+    if board[3] == mark and board[5] == mark and board[7] == mark:
+        win = True
+        return print(win)
+    else:
+        win = False
+        return print(win)
+   
 display_board(test_board)
-place_marker(test_board,'$',8)
+place_marker(test_board,'X',8)
 display_board(test_board)
+win_check(test_board,'X')
