@@ -5,7 +5,7 @@
 #     The board should be printed out every time a player makes a move
 #     You should be able to accept input of the player position and then place a symbol on the board
 
-def display_board(b):
+def display_board(board):
     print(f'{board[7]} | {board[8]} | {board[9]}')
     print('- '+' '+' - '+" "+" - ")
     print(f'{board[4]} | {board[5]} | {board[6]}')
