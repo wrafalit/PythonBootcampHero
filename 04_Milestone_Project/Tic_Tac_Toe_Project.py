@@ -5,17 +5,12 @@
 #     The board should be printed out every time a player makes a move
 #     You should be able to accept input of the player position and then place a symbol on the board
 
-b1 = 'X'
-b2 = 'X'
-b3 = 'X'
-b4 = 'X'
-b5 = 'X'
-b6 = 'X'
-b7 = 'X'
-b8 = 'X'
-b9 = 'X'
-print(f'{b7} | {b8} | {b9}')
-print('- '+' '+' - '+" "+" - ")
-print(f'{b4} | {b5} | {b6}')
-print('- '+' '+' - '+" "+" - ")
-print(f'{b2} | {b3} | {b4}')
+def display_board(b):
+    print(f'{b[7]} | {b[8]} | {b[9]}')
+    print('- '+' '+' - '+" "+" - ")
+    print(f'{b[4]} | {b[5]} | {b[6]}')
+    print('- '+' '+' - '+" "+" - ")
+    print(f'{b[2]} | {b[3]} | {b[4]}')
+
+test_board = ['#','X','O','X','O','X','O','X','O','X']
+display_board(test_board)
