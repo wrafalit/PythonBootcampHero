@@ -6,11 +6,11 @@
 #     You should be able to accept input of the player position and then place a symbol on the board
 
 def display_board(b):
-    print(f'{b[7]} | {b[8]} | {b[9]}')
+    print(f'{board[7]} | {board[8]} | {board[9]}')
     print('- '+' '+' - '+" "+" - ")
-    print(f'{b[4]} | {b[5]} | {b[6]}')
+    print(f'{board[4]} | {board[5]} | {board[6]}')
     print('- '+' '+' - '+" "+" - ")
-    print(f'{b[2]} | {b[3]} | {b[4]}')
+    print(f'{board[2]} | {board[3]} | {board[4]}')
 
 def player_input():
     p_input = ''
