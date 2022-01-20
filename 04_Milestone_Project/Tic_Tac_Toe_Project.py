@@ -12,5 +12,17 @@ def display_board(b):
     print('- '+' '+' - '+" "+" - ")
     print(f'{b[2]} | {b[3]} | {b[4]}')
 
-test_board = ['#','X','O','X','O','X','O','X','O','X']
-display_board(test_board)
+def player_input():
+    p_input = ''
+    while p_input.lower() not in ['x','o']:
+        p_input = input('Please choose X or O: ')
+        if p_input.lower() not in ['x','o']:
+            print('\n'*100)
+            print('Wrong letter')
+            print('Please choose X or O ')
+        else:
+            pass
+
+#player_input()
+#test_board = ['#','X','O','X','O','X','O','X','O','X']
+#display_board(test_board)
