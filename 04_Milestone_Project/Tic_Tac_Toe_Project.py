@@ -61,10 +61,16 @@ import random
 def choose_first():
     first = random.randint(1,2)
     return print(first)
-    
+
+def space_check(board, position):
+    if not board[position] == ' ':
+        return False
+    else:
+        return True
 
 display_board(test_board)
 place_marker(test_board,'X',8)
 display_board(test_board)
 win_check(test_board,'X')
 choose_first()
+space_check(test_board,4)
