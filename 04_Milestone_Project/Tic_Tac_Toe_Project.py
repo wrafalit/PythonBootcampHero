@@ -68,9 +68,20 @@ def space_check(board, position):
     else:
         return True
 
+    def full_board_check(board):
+    count = 0
+    for i in range(1,len(board)):
+        if board[i] == ' ':
+            count += 1
+    if count > 0:
+        return True
+    else:
+        return False
+    
 display_board(test_board)
 place_marker(test_board,'X',8)
 display_board(test_board)
 win_check(test_board,'X')
 choose_first()
 space_check(test_board,4)
+full_board_check(test_board)
