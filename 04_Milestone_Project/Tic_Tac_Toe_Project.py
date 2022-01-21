@@ -77,6 +77,23 @@ def space_check(board, position):
         return True
     else:
         return False
+
+  
+def player_choice(board):
+    p_choice = ''
+    w_range = False
+    while p_choice.isdigit() == False or w_range == False:
+        p_choice = input('Choose number 1-9: ')
+        
+        if p_choice.isdigit() == False:
+            print('Wrong number')
+        if p_choice.isdigit() == True:
+            if int(p_choice) in range(1,10):
+                w_range = True
+            else:
+                w_range = False
+    print(space_check(test_board, int(p_choice)))
+
     
 display_board(test_board)
 place_marker(test_board,'X',8)
@@ -85,3 +102,4 @@ win_check(test_board,'X')
 choose_first()
 space_check(test_board,4)
 full_board_check(test_board)
+player_choice(test_board))
