@@ -94,6 +94,14 @@ def player_choice(board):
                 w_range = False
     print(space_check(test_board, int(p_choice)))
 
+def replay():
+    p_rep = ''
+    while p_rep.lower not in ['y','n']:
+        p_rep= input('If you want to play again?. press Y-yes, N-no: ')
+        if p_rep == 'y':
+            return True
+        elif p_rep == 'n':
+            return False
     
 display_board(test_board)
 place_marker(test_board,'X',8)
@@ -103,3 +111,4 @@ choose_first()
 space_check(test_board,4)
 full_board_check(test_board)
 player_choice(test_board))
+replay()
