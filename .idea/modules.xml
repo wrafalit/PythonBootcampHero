@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PythonBootcampHero.iml" filepath="$PROJECT_DIR$/.idea/PythonBootcampHero.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Unit_Testing_&amp;_Test_Automation/.idea/Unit_Testing_&amp;_Test_Automation.iml" filepath="$PROJECT_DIR$/../Unit_Testing_&amp;_Test_Automation/.idea/Unit_Testing_&amp;_Test_Automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonExercises/.idea/pythonProject2.iml" filepath="$PROJECT_DIR$/../PythonExercises/.idea/pythonProject2.iml" />
     </modules>
   </component>
 </project>
