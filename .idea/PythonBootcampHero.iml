@@ -6,7 +6,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Unit_Testing_&amp;_Test_Automation" />
-    <orderEntry type="module" module-name="pythonProject2" />
   </component>
 </module>
